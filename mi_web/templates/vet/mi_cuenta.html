@@ -1,0 +1,220 @@
+{% extends "vet/base_p.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}Mi_cuenta{% endblock title %}
+{% block contenido %}
+    <div class="row">
+        <div class="col-2 d-none d-md-block">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" style="height: 100px;" id="list-home-list" data-bs-toggle="list" href="#Perfil" role="tab" aria-controls="list-home" >Perfil </a>
+            <a class="list-group-item list-group-item-action" style="height: 100px;" id="list-profile-list" data-bs-toggle="list" href="#targetas" role="tab" aria-controls="list-profile">Tarjetas</a>
+            <a class="list-group-item list-group-item-action" style="height: 100px;" id="list-profile-list" data-bs-toggle="list" href="#Compras" role="tab" aria-controls="list-profile">Compras</a>
+            <a class="list-group-item list-group-item-action" style="height: 100px;"  id="list-messages-list" data-bs-toggle="list" href="#Historial" role="tab" aria-controls="list-messages">Historial</a>
+            <a class="list-group-item list-group-item-action" style="height: 100px;"  id="list-messages-list" data-bs-toggle="list" href="#Reclamos" role="tab" aria-controls="list-messages">Reclamos</a>
+            <a class="list-group-item list-group-item-action" style="height: 100px;"  id="list-messages-list" data-bs-toggle="list" href="#configuración" role="tab" aria-controls="list-messages">Cambiar contraseña</a>
+          </div>
+        </div>
+        <div class="col-sm-12 d-md-none">
+            <div class="btn-group d-flex">
+                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton">
+                    Perfil
+                </button>
+                <ul class="dropdown-menu">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" style="height: 40px;" id="list-home-list" data-bs-toggle="list" href="#Perfil" role="tab" aria-controls="list-home">Perfil </a>
+                        <a class="list-group-item list-group-item-action" style="height: 40px;" id="list-profile-list" data-bs-toggle="list" href="#targetas" role="tab" aria-controls="list-profile">Tarjetas</a>
+                        <a class="list-group-item list-group-item-action" style="height: 40px;" id="list-compras-list" data-bs-toggle="list" href="#Compras" role="tab" aria-controls="list-profile">Compras</a>
+                        <a class="list-group-item list-group-item-action" style="height: 40px;" id="list-historial-list" data-bs-toggle="list" href="#Historial" role="tab" aria-controls="list-messages">Historial</a>
+                        <a class="list-group-item list-group-item-action" style="height: 40px;" id="list-reclamos-list" data-bs-toggle="list" href="#Reclamos" role="tab" aria-controls="list-messages">Reclamos</a>
+                        <a class="list-group-item list-group-item-action" style="height: 40px;" id="list-configuracion-list" data-bs-toggle="list" href="#configuración" role="tab" aria-controls="list-messages">Cambiar contraseña</a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10 col-sm-12">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="Perfil" role="tabpanel" aria-labelledby="list-home-list">
+                <form class="pt-3" action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div>
+                        <input type="submit" name="update_profile" value="Guardar Cambios" class="btn btn-warning text-light">
+                    </div>
+                </form> 
+            </div>
+            <div class="tab-pane fade" id="targetas" role="tabpanel" aria-labelledby="list-profile-list">
+                <section class="py-5">
+                    <div class="container px-4 px-lg-5">
+                        <h1 class="text-center"> TARJETAS </h1>
+                        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                            {% for t in targetas %}
+                            <div class="col mb-5">
+                                <div class="card h-60">
+                                    <h3>Visa</h3> 
+                                    <div class="card-body p-1">
+                                        <div class="text-center">
+                                            <h5>{{t}}</h5>
+                                        </div>
+                                    </div>
+                                    <!-- Product actions-->
+                                    <div class="card-footer p-2 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url "mi_cuenta_td" t.id user.correo%}">Ver Tarjeta</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <div class="col mb-5">
+                                <div class="card h-100">
+                                    <h1 class="text-center"> Nueva Tarjeta </h1>
+                                    <div class="card-body p-1">
+                                        <form action="" method="post" enctype="multipart/form-data">
+                                            {% csrf_token %}
+                                            {{ form4 | crispy }}
+                                    </div>
+                                    <!-- Product actions-->
+                                    <div class="card-footer p-2 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><input type="submit" name="agragar_tarjeta" value="agregar targeta" class=" btn btn-sm btn-dark text-light"></div>
+                                        </form> 
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="Compras" role="tabpanel" aria-labelledby="list-profile-list">
+                    
+                    <section class="py-5">
+                        <div class="container px-4 px-lg-5">
+                            <h1 class="text-center"> Boletas </h1>
+                            <div class="row gx-1 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-2 justify-content-center">
+                                {% if boletas %}
+                                {% for boleta in boletas %}
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <h3 class="text-center">Detalles de Boleta</h3>
+                                        <div class="card-body p-1">
+                                            <p><strong>Estado:</strong> {{ boleta.estado }}</p>
+                                            <p><strong>Dirección de Entrega:</strong> {{ boleta.direccion2 }}</p>
+                                            <p><strong>Fecha de Emisión:</strong> {{ boleta.fecha_emision }}</p>
+                                        </div>
+                                        <div class="card-footer p-2 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url "ver_boleta" boleta.id%}">Ver Boleta</a></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                {% endfor %}
+                                    {% else %}
+                                    
+                                        <div class="text-center">
+                                            no hay compras
+                                        </div>
+                                    
+                                    {% endif %}
+                            </div>
+                        </div>
+                    </section>
+                    
+                
+            </div>
+
+            <div class="tab-pane fade" id="Historial" role="tabpanel" aria-labelledby="list-messages-list">
+                <section class="py-5">
+                    <div class="container px-4 px-lg-5">
+                        <h1 class="text-center"> Boletas </h1>
+                        <div class="row gx-1 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-2 justify-content-center">
+                            {% if Boletas_completadas %}
+                            {% for boleta_c in Boletas_completadas %}
+                            <div class="col mb-5">
+                                <div class="card h-100">
+                                    <h3 class="text-center">Detalles de Boleta</h3>
+                                    <div class="card-body p-1">
+                                        <p><strong>Estado:</strong> {{ boleta_c.estado }}</p>
+                                        <p><strong>Dirección de Entrega:</strong> {{ boleta_c.direccion2 }}</p>
+                                        <p><strong>Fecha de Emisión:</strong> {{ boleta_c.fecha_emision }}</p>
+                                    </div>
+                                    <div class="card-footer p-2 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url "ver_boleta" boleta_c.id%}">Ver Boleta</a></div>
+                                    </div>
+                                </div> 
+                            </div>
+                            {% endfor %}
+                            {% else %}
+                                    <div class="text-center">
+                                        no posee compras completadas
+                                    </div>
+                                
+                            {% endif %}
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="Reclamos" role="tabpanel" aria-labelledby="list-messages-list">
+                    <section class="py-5">
+                        <div class="container px-4 px-lg-5">
+                            <h1 class="text-center"> Reclamos </h1>
+                            <div class="row gx-1 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-2 justify-content-center">
+                                {% if reclamos %}
+                                {% for reclamo in reclamos %}
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <h3 class="text-center">Detalles del reclamo</h3>
+                                        <div class="card-body p-1">
+                                            <p><strong>boleta:</strong> {{ reclamo.boleta }}</p>
+                                            <p><strong>Usuario:</strong> {{ reclamo.tipo }}</p>
+                                            <p><strong>Carrito de Compras:</strong> {{ reclamo.estado }}</p>
+                                            <p><strong>Método de Pago:</strong> {{ reclamo.descripcion }}</p>
+                                            <p><strong>Estado:</strong> {{ reclamo.fecha_creacion }}</p>
+                                        </div>
+                                        <div class="card-footer p-2 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"></div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                {% endfor %}
+                                {% else %}
+                                    <div class="text-center">
+                                        no posee reclamos
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </section>  
+            </div>
+            
+            <div class="tab-pane fade" id="configuración" role="tabpanel" aria-labelledby="list-messages-list">
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form2 | crispy }}
+                    <div>
+                        <input type="submit" name="change_password" value="Cambiar Contraseña" class="btn btn-warning text-light">
+                    </div>
+                </form> 
+            </div>
+
+          </div>
+        </div>
+      </div>
+{% endblock contenido %}        
+        
+{% block script %}
+    <script src="{% static 'vet/js/user_cuenta.js'%}"></script>
+    <script src="{% static 'vet/js/user_cuenta_jq.js'%}"></script> 
+    <script src="{% static 'vet/js/registro2.js'%}"></script>   
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var dropdownItems = document.querySelectorAll('.list-group-item');
+            var dropdownButton = document.getElementById('dropdownMenuButton');
+        
+            dropdownItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    dropdownButton.textContent = this.textContent;
+                });
+            });
+        });
+        </script>
+{% endblock script %}
+
+     
+    

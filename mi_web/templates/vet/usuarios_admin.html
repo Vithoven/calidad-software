@@ -1,0 +1,80 @@
+{% extends "vet\base_admin.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block stilos %} {% endblock stilos %}
+{% block title %} admin usuarios {% endblock title %}
+{% block contenido %}
+
+<h2 class="text-center">Lista de Usuarios</h2>
+
+
+<div class="container-fluid">
+  <a class="btn btn-primary " data-bs-toggle="offcanvas" href="#canvas_filtro" role="button" aria-controls="canvas_filtro">
+    filtro
+  </a>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for usuario in usuarios %}
+            <tr>
+                <td>{{ usuario.nombre }}</td>
+                <td>{{ usuario.apellido }}</td>
+                <td>{{ usuario.correo }}</td>
+                <td>
+                    {% if usuario.is_staff %} Empleado {% endif %}
+                    {% if usuario.is_superuser %} Superuser {% endif %}
+                    {% if usuario.es_baneado %} Baneado {% else %} Normal {% endif %}
+                </td>
+                <!-- Añade tus botones de acción aquí -->
+                <td>
+                  {% if usuario.es_baneado %}
+                  <!-- Botón de desbloqueo -->
+                    <a href='{% url "desbloqueo_admin" usuario.correo%}' role='button' class="btn btn-success border">desbloqueo</a>
+                  {% else %}
+                  <!-- Botón de bloqueo -->
+                    <a href='{% url "bloqueo_admin" usuario.correo%}' role='button' class="btn btn-danger border">Bloquear</a>
+                  {% endif %}
+                </td>
+            </tr>
+        {% empty %}
+            <tr>
+                <td colspan="5">No hay usuarios disponibles.</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+<!--Función para ver el filtro usuario-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="canvas_filtro" aria-labelledby="canvas_filtro">
+  <div class="offcanvas-header">
+    <h4 class="offcanvas-title" id="canvas_filtroLabel">puede filtrar por </h4>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <form method="get">
+        {{ form_filter | crispy }}
+        <button class="btn btn-primary" type="submit">Filtrar</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock contenido %}
+{% block script %}
+<script src="{% static 'vet/js/usuario_adm_js.js'%}"></script>
+{% endblock script %}   
+
+
+
+      
+  

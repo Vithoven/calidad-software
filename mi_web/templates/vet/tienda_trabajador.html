@@ -1,0 +1,67 @@
+{% extends "vet\base_admin.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}adm producto{% endblock title %}
+{% block contenido %}
+<!--Productos existentes en la tienda-->        
+<section class="py-5 col-md-12">
+    <div class="container px-4 px-lg-5">
+        <h1 class="text-center">Tienda Online</h1>                   
+        <a class="btn btn-secondary btn-block mb-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Añadir producto
+        </a>
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">               
+            {% if productos %}
+                {% for p in productos %}
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{{ p.foto.url }}" alt="{{ p.nombre }}" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">{{ p.nombre }}</h5>
+                                    <!-- Product price-->
+                                    ${{ p.precio }}
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href='{% url "detalleP_trabajador" p.nombre %}' >Modificar producto</a> </div> 
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href='{% url "eliminarP_trabajador" p.nombre %}' >Eliminar producto</a> </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="col-12 text-center">
+                    <p>No hay productos disponibles.</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Añadir producto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+                <div>
+                    <p class="text-center"> Ingrese datos del producto </p>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %} 
+                         {{form2 | crispy}}
+                        <div class="mb-3">
+                            <button type="submit" value="Crear producto" class="btn btn-success w-100 " >Agregar</button>
+                        </div>
+                    </form>  
+                </div>
+{% endblock contenido %}
+{% block script %}
+<script src="{% static 'vet/js/registro2.js'%}"></script>
+{% endblock script %}

@@ -1,0 +1,25 @@
+{% extends "vet/base_p.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %} registro {% endblock title %}
+{% block contenido %}
+<div class="row justify-content-center">
+    <div class="col-12 col-md-6 m-2">
+        <div class="card text-start">
+            <div class="card-body">
+                <!--{% crispy form %}-->
+                <form method="post" class="needs-validation" novalidate=""> 
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    {{ form2 | crispy }}
+                    <button type="submit" class="btn btn-primary" >Enviar</button>
+                </form>
+            </div>
+        </div> 
+    </div>
+</div>
+{% endblock contenido %}
+{% block script %}
+    <!--Vinculación del archivo js-->
+    <script src="{% static 'vet/js/registro2.js'%}"></script>
+{% endblock script %}

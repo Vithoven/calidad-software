@@ -1,0 +1,46 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+#Menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+
+}
+
+#Menu form > button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carousel-inner{
+    max-height: 36rem;
+    
+}
+
+.adop{
+    width: 100% !important;
+    text-align: center;
+}
+
+@media(max-width:576px){
+    .ico{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+.table-resp{
+    display: list-item;
+    overflow-y: scroll;
+}
+

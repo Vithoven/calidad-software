@@ -1,0 +1,39 @@
+{% extends "vet/base_p.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %} boleta {% endblock title %}
+{% block contenido %}
+<div class="row justify-content-center">
+    <div class="col-12 col-md-6 m-2">
+        <div class="card text-start">
+            <div class="card-body">
+                <h1>Detalle de Boleta</h1>
+                <p><strong>Usuario:</strong> {{ boleta.user }}</p>
+                <p><strong>Método de Pago:</strong> {{ boleta.metodoDePago }}</p>
+                <p><strong>Estado:</strong> {{ boleta.estado }}</p>
+                <p><strong>Teléfono de contacto:</strong> {{ boleta.telefono2 }}</p>
+                <p><strong>Comuna:</strong> {{ boleta.comuna2 }}</p>
+                <p><strong>Dirección:</strong> {{ boleta.direccion2 }}</p>
+                <p><strong>Nombre del Receptor:</strong> {{ boleta.nombre_receptor }}</p>
+                <p><strong>RUT del Receptor:</strong> {{ boleta.rut_receptor }}</p>
+        
+                <h2>Productos:</h2>
+                <ul>
+                    {% for producto_boleta in productos_boleta %}
+                        <li>{{ producto_boleta.producto }} - Cantidad: {{ producto_boleta.cantidad }}</li>
+                    {% endfor %}
+                </ul>
+                <p><strong>Fecha de Emisión:</strong> {{ boleta.fecha_emision }}</p>
+                <!-- Puedes añadir más detalles según sea necesario -->
+                <a href='{% url "mi_cuenta" user.correo%}' role='button' class="btn btn-light border">mi cuenta</a>
+                <a href='{% url "Crear_reclamo" boleta.id %}' role='button' class="btn btn-danger border">Hacer reclamo</a>
+            </div>
+        </div> 
+    </div>
+</div>
+{% endblock contenido %}
+
+{% block script %}
+    <!--Vinculación del archivo js-->
+    <script src="{% static 'vet/js/registro2.js'%}"></script>
+{% endblock script %}

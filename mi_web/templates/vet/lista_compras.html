@@ -1,0 +1,56 @@
+{% extends "vet\base_admin.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}tabajador lista de compras{% endblock title %}
+{% block contenido %}
+
+<!--Formulario de información e historial de compras efectuadas por usuarios-->
+<div class="container-fluid">
+    <div class="row"> 
+    <h1 class="text-center">Lista de Compras</h1>
+    <div class="container">
+        <form method="get" action="">
+            {% crispy filter_form %}
+        </form>
+        {% if boletas %}
+
+        <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Usuario</th>
+                    <th>Estado</th>
+                    
+                    <th>Acciones</th>
+                    <!-- Agrega más columnas según tus necesidades -->
+                </tr>
+            </thead>
+            <tbody>
+                {% for boleta in boletas %}
+                    <tr>
+                        <td>{{ boleta.id }}</td>
+                        <td>{{ boleta.user.nombre }}</td>
+                        <td>{{ boleta.get_estado_display }}</td>
+                        
+                        <td>
+                            <a href='{% url "Revision_estado" boleta.id %}' role='button' class="btn btn-dark border">revision</a>
+                        </td>
+                        <!-- Agrega más columnas según tus necesidades -->
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+        <p>No se encontraron boletas.</p>
+    {% endif %}
+    </div>
+           
+                            
+    </div>                       
+</div>
+
+{% endblock contenido %}
+    
+        

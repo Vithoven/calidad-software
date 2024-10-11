@@ -1,0 +1,44 @@
+{% extends "vet/base_p.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %} home {% endblock title %}
+{% block contenido %}
+<div class=" d-flex justify-content-center">
+    <div class="cotainer p-5 rounded-5 text-secudary " id="login">
+            <img src="{% static 'vet/img/logo.png'%}" style="height: 10rem; " alt="logo tienda">
+            <h2 class="text-center">Login</h2>
+        <div class="">
+            {% for message in messages %}
+                <div class="alert {% if message.tags %}alert-{{message.tags}}{% endif %} alert-dismissible fade show" role="alert">
+                    <strong>
+                        {% if message.tags == 'success' %}
+                            <i class="bi bi-info-circle-fill"></i>
+                        {% else %}
+                            <i class="bi bi-exclamation-triangle-fill"></i>
+                        {% endif %}
+                    </strong> {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+            <form action="" method="post">
+                {% csrf_token %} 
+                {{form | crispy}}
+                <button type="submit" class="btn btn-primary btn-fluid">Iniciar Sesión</button>
+            </form>
+        </div>
+            <!--Recupera de contraseña-->
+            <div class="mb-3 text-center">
+                <a href="{% url "recordando" %}">¿Se te olvidó la contraseña?</a>
+            </div>
+                
+            <div class="mb-3">
+                <a href="{% url "registro" %}">Crear cuenta</a>
+            </div>
+
+        </div>
+    </div>
+    {% endblock contenido %}
+    {% block script %}
+    <!-- Vinculación del archivo js  -->
+   
+    {% endblock script %}

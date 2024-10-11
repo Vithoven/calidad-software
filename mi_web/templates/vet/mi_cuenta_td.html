@@ -1,0 +1,42 @@
+{% extends "vet\base_p.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}detalles de targeta{% endblock title %} 
+{% block contenido %}
+<!--targeta a modificar-->
+<div class="container px-5 mt-4">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="mt-4 p-2 border rounded">
+                <h3 class="text-center mt-3">Editar Tarjeta</h3>
+                
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{form | crispy}}
+                    <div>
+                        <input type="submit" name="eliminar_tarjeta" value="eliminar tarjeta" class="btn btn-danger text-light"> 
+                        <input type="submit" name="modificar_tarjeta" value="modificar tarjeta" class="btn btn-success text-light">
+                        <a href='{% url "mi_cuenta" user.correo%}' role='button' class="btn btn-light border">Volver</a>
+                    </div>
+                   
+                </form>
+                
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div> 
+{% endblock contenido %}   
+        
+{% block script %}
+    <script src="{% static 'vet/js/jquery-3.7.1.min.js'%}"></script>
+    <script src="{% static 'vet/js/adm_tienda.js'%}"></script>
+    <script src="{% static 'vet/js/adm_tienda_jq.js'%}"></script>
+    <script src="{% static 'vet/js/registro2.js'%}"></script>
+
+{% endblock script %}
+
+
+        
+ 

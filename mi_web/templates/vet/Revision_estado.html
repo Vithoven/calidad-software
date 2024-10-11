@@ -1,0 +1,73 @@
+{% extends "vet\base_admin.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}revision estado{% endblock title %}
+{% block contenido %}
+<div class="row m-1">
+    <section class="py-2 col-md-12">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-2 justify-content-center"> 
+                <div class="col mb-5">
+                    <h1 class="text-center">Detalle de Boleta</h1>
+                    <div class="card h-80">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <p><strong>Usuario:</strong> {{ boleta.user }}</p>
+                                <p><strong>Método de Pago:</strong> {{ boleta.metodoDePago }}</p>
+                                <p><strong>Estado:</strong> {{ boleta.estado }}</p>
+                                <p><strong>Teléfono de contacto:</strong> {{ boleta.telefono2 }}</p>
+                                <p><strong>Comuna:</strong> {{ boleta.comuna2 }}</p>
+                                <p><strong>Dirección:</strong> {{ boleta.direccion2 }}</p>
+                                <p><strong>Nombre del Receptor:</strong> {{ boleta.nombre_receptor }}</p>
+                                <p><strong>RUT del Receptor:</strong> {{ boleta.rut_receptor }}</p>
+                                <h2>Productos:</h2>
+                                <ul>
+                                    {% for producto_boleta in productos_boleta %}
+                                        <li>{{ producto_boleta.producto }} - Cantidad: {{ producto_boleta.cantidad }}</li>
+                                    {% endfor %}
+                                </ul>
+                                <p><strong>Fecha de Emisión:</strong> {{ boleta.fecha_emision }}</p>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <h1 class="text-center">Modificar boleta</h1> 
+                    <div class="card h-80">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <p>Modificar estado</p>
+                                <form method="post" > 
+                                    {% csrf_token %}
+                                    {{ form | crispy }}
+                                    <button type="submit" class="btn btn-primary" >Modificar Estado</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                             
+                            <div class="text-center">
+                                <a href='{% url "reclamos_admin" %}' class="btn btn-primary">Ir a la lista de Reclamos</a>
+
+                                <a href='{% url "lista_compras" %}' class="btn btn-primary">Ir a la lista de Compras</a>
+                            
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</div>
+  
+{% endblock contenido %}  
+

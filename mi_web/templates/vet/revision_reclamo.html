@@ -1,0 +1,57 @@
+{% extends "vet\base_admin.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}revision reclamo{% endblock title %}
+{% block contenido %}
+<div class="row m-1">
+    <section class="py-2 col-md-12">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-2 justify-content-center"> 
+                <div class="col mb-5">
+                    <h1 class="text-center">Detalle del Reclamo</h1>
+                    <div class="card h-80">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="card-title">Reclamo {{ reclamo.id }}</h5>
+                                <p class="card-text"><strong>Usuario:</strong> {{ reclamo.usuario }}</p>
+                                <p class="card-text"><strong>Boleta:</strong> {{ reclamo.boleta }}</p>
+                                <p class="card-text"><strong>Tipo de Reclamo:</strong> {{ reclamo.get_tipo_display }}</p>
+                                <p class="card-text"><strong>Estado:</strong> {{ reclamo.get_estado_display }}</p>
+                                <p class="card-text"><strong>Descripción:</strong> {{ reclamo.descripcion }}</p>
+                                <p class="card-text"><strong>Fecha de Creación:</strong> {{ reclamo.fecha_creacion }}</p>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <h1 class="text-center">Modificar Reclamo</h1>
+                    <div class="card h-80">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <form method="post">
+                                    {% csrf_token %}
+                                    {{form | crispy }}
+                                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            
+                            <div class="text-center"><a href="{% url 'reclamos_admin' %}" class="btn btn-primary">Volver a la lista de reclamos</a></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock contenido %}  
+

@@ -1,0 +1,30 @@
+{% extends "vet\base_admin.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}Tienda Online {% endblock title %} 
+{% block contenido %}
+<!--Producto a modificar-->
+<div class="container px-5 mt-4">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="mt-4 p-2 border rounded">
+                <h3 class="text-center mt-3">Editar producto</h3>
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div>
+                        <input type="submit" value="Guardar Cambios" class="btn btn-warning text-light">
+                        <a href='{% url "tienda_trabajador" %}' role='button' class="btn btn-light border">Volver</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div> 
+{% endblock contenido %}
+{% block script %}
+    <script src="{% static 'vet/js/jquery-3.7.1.min.js'%}"></script>
+    <script src="{% static 'vet/js/registro2.js'%}"></script>
+{% endblock script %}
