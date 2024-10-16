@@ -19,7 +19,7 @@ function validarMetodoEnvio(){
     var envioDomicilioChecked = document.getElementById("envioDomicilio").checked;
 
     if (!retiroTiendaChecked && !envioDomicilioChecked) {
-        mensajeError.innerText = "Debe seleccionar una opción para recibir el producto.";
+        mensajeError.innerText = "Debe seleccionar una opción para recibir el vehiculo.";
         mensajeError.style.color = "red";
         return false; // Evita que se envíe el formulario si no se ha seleccionado un método de envío
     } else {

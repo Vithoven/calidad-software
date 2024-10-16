@@ -24,7 +24,7 @@ function decrementarCantidad2(id) {
 
 function mostrarMensaje() {
     var mensajeError = document.createElement("span");
-    mensajeError.textContent = "Producto agregado al carrito ✅";
+    mensajeError.textContent = "Vehiculo agregado al carrito ✅";
     mensajeError.style.color = "green";
     
     // Insertar el mensaje después del botón "Agregar al carrito"
