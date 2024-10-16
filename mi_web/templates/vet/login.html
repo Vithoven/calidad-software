@@ -5,8 +5,7 @@
 {% block contenido %}
 <div class=" d-flex justify-content-center">
     <div class="cotainer p-5 rounded-5 text-secudary " id="login">
-            <img src="{% static 'vet/img/logo.png'%}" style="height: 10rem; " alt="logo tienda">
-            <h2 class="text-center">Login</h2>
+            <h2 class="text-center">Inicia sesión</h2>
         <div class="">
             {% for message in messages %}
                 <div class="alert {% if message.tags %}alert-{{message.tags}}{% endif %} alert-dismissible fade show" role="alert">
