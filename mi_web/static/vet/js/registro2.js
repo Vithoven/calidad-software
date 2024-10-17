@@ -373,7 +373,7 @@ function vencimiento_v() {
         // Obtener mes y año ingresados
         var partesFecha = fechaIngresada.split('/');
         var mesIngresado = parseInt(partesFecha[0], 10);
-        var añoIngresado = 2000 + parseInt(partesFecha[1], 10); // Asumiendo que los años ingresados están en formato "YY" y los convertimos a "YYYY"
+        var añoIngresado = 2000 + parseInt(partesFecha[1], 10);
 
         // Comparar con la fecha actual
         if (añoIngresado < añoActual || (añoIngresado === añoActual && mesIngresado < mesActual)) {

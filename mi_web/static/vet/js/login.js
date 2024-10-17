@@ -41,7 +41,7 @@ function validarCorreosuario(){
     }else {
         mensajeError.innerText = "Ingrese un correo válido.";
         mensajeError.style.color = "red";
-        coreoinp.setCustomValidity("no válido");
+        coreoinp.setCustomValidity("No válido");
         return false; // Evita que se envíe el formulario si el correo no contiene "@gmail o @hotmail .com o .cl" 
     }
    
