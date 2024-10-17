@@ -64,7 +64,10 @@
         var minInput = document.getElementsByName('precio_min')[0];
         var maxInput = document.getElementsByName('precio_max')[0];
         var initialMinValue = minInput.value || 0;
-        var initialMaxValue = maxInput.value || 200000;
+        var initialMaxValue = maxInput.value || 700000000; // Ajuste del valor inicial a 1.000.000.000
+
+        // Asignamos el valor máximo al elemento del rango
+        rangeInput.max = 1000000000; // Cambia el máximo del rango a 1.000.000.000
 
         rangeInput.addEventListener('input', function() {
             var value = rangeInput.value;
@@ -79,4 +82,3 @@
     });
 </script>
 {% endblock script %}
-
