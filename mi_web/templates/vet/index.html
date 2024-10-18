@@ -63,17 +63,18 @@
         var priceMax = document.getElementById('priceMax');
         var minInput = document.getElementsByName('precio_min')[0];
         var maxInput = document.getElementsByName('precio_max')[0];
-        var initialMinValue = minInput.value || 0;
-        var initialMaxValue = maxInput.value || 700000000; // Ajuste del valor inicial a 1.000.000.000
+        var initialMinValue = minInput.value || 5000;
+        var initialMaxValue = maxInput.value || 10000000;
 
-        // Asignamos el valor máximo al elemento del rango
-        rangeInput.max = 1000000000; // Cambia el máximo del rango a 1.000.000.000
+        rangeInput.min = 5000;
+        rangeInput.max = 99999999;
+        rangeInput.step = 10000000;
 
         rangeInput.addEventListener('input', function() {
             var value = rangeInput.value;
-            priceMin.innerHTML = 0;
+            priceMin.innerHTML = 5000;
             priceMax.innerHTML = value;
-            minInput.value = 0;
+            minInput.value = 5000;
             maxInput.value = value;
         });
 
