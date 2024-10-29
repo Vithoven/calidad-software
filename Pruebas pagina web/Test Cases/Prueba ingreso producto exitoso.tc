@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Prueba ingreso producto exitoso</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4f9ad1d9-7a7a-4871-b60c-a398f1b064b4</testCaseGuid>
+</TestCaseEntity>
