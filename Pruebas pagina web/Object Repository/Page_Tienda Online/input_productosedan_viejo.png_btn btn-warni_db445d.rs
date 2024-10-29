@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input__stock</name>
+   <name>input_productosedan_viejo.png_btn btn-warni_db445d</name>
    <tag></tag>
-   <elementGuidId>985d1625-b6b6-42de-9cf7-73d4c49ff59d</elementGuidId>
+   <elementGuidId>199d1b93-0420-4fb5-8727-806c6136830d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#stock_id</value>
+         <value>input.btn.btn-warning.text-light</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='stock_id']</value>
+         <value>//input[@value='Guardar Cambios']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:label=&quot;Stock*&quot;i</value>
+         <value>internal:role=button[name=&quot;Guardar Cambios&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,86 +29,62 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>3212ecea-2653-448f-b133-69a061da47b2</webElementGuid>
+      <webElementGuid>47ac2b05-2a3e-405b-8121-c499ddeb44c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>number</value>
-      <webElementGuid>d43487e4-2822-4eab-bf94-c94f3908c167</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>stock</value>
-      <webElementGuid>12bf7279-7661-444a-a23d-3d67b87b85b2</webElementGuid>
+      <value>submit</value>
+      <webElementGuid>af93a98b-8e88-4d6a-90ef-602bec2e9923</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>0</value>
-      <webElementGuid>84c3e994-fe3b-4e4c-a0e9-775c60034d22</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>stock_id</value>
-      <webElementGuid>d6215f51-a90e-44fe-8c3a-00128b8ea97c</webElementGuid>
+      <value>Guardar Cambios</value>
+      <webElementGuid>b4bb009c-dadb-4864-a7bf-f812d40baebe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>numberinput form-control</value>
-      <webElementGuid>cea9a685-9354-4935-914a-068f42524cea</webElementGuid>
+      <value>btn btn-warning text-light</value>
+      <webElementGuid>28c0aa8a-5904-4bfe-8af2-99b00a9861bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;stock_id&quot;)</value>
-      <webElementGuid>205af391-3cf7-43c4-8bca-765a24474eb5</webElementGuid>
+      <value>/html[1]/body[1]/main[1]/div[@class=&quot;container px-5 mt-4&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-6&quot;]/div[@class=&quot;mt-4 p-2 border rounded&quot;]/form[1]/div[6]/input[@class=&quot;btn btn-warning text-light&quot;]</value>
+      <webElementGuid>6ebfcf65-0132-4e69-848b-d15b40a9dfe9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='stock_id']</value>
-      <webElementGuid>824a65b1-0783-4188-8282-cd01bc4f4d3e</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='div_id_stock']/input</value>
-      <webElementGuid>5eb21126-6d44-4d33-afbd-fb07037f3c5d</webElementGuid>
+      <value>//input[@value='Guardar Cambios']</value>
+      <webElementGuid>4f0f333d-aae4-4437-a78d-f1a3464eeefb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/input</value>
-      <webElementGuid>7198eba8-837c-49cf-996e-519e283daa1d</webElementGuid>
+      <value>//div[6]/input</value>
+      <webElementGuid>5d744450-e949-4198-a0ba-1cedb98c9192</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'number' and @name = 'stock' and @id = 'stock_id']</value>
-      <webElementGuid>e6fac371-7b8d-4a6c-bcfe-186a0d2922a2</webElementGuid>
+      <value>//input[@type = 'submit']</value>
+      <webElementGuid>14589e8f-b67d-4816-91da-6e387a6437c3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

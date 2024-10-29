@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://127.0.0.1:8000/login/?next=/trabajador/')
+WebUI.navigateToUrl('http://127.0.0.1:8000/login/?next=/tienda_trabajador/')
 
 WebUI.setText(findTestObject('Object Repository/Page_home/input__username'), 'eladmin@gmail.com')
 
@@ -29,19 +29,9 @@ WebUI.click(findTestObject('Object Repository/Page_home/button_Iniciar Sesin'))
 
 WebUI.click(findTestObject('Object Repository/Page_Mi_cuenta_admin/a_Adminstrar Vehiculos'))
 
-WebUI.click(findTestObject('Object Repository/Page_adm producto/a_Aadir producto'))
+WebUI.click(findTestObject('Object Repository/Page_adm producto/a_Eliminar producto'))
 
-WebUI.setText(findTestObject('Object Repository/Page_adm producto/input__nombre'), 'camioneta vieja')
-
-WebUI.setText(findTestObject('Object Repository/Page_adm producto/input__stock'), '4')
-
-WebUI.setText(findTestObject('Object Repository/Page_adm producto/input__descripcin'), 'esta vieja')
-
-WebUI.setText(findTestObject('Object Repository/Page_adm producto/input__precio'), '90000')
-
-WebUI.click(findTestObject('Object Repository/Page_adm producto/button_Agregar'))
-
-WebUI.click(findTestObject('Object Repository/Page_adm producto/a_Modificar producto'))
+WebUI.click(findTestObject('Object Repository/Page_eliminacion producto/input_productoElectaurus_SYSVYox.png_btn bt_095148'))
 
 WebUI.closeBrowser()
 

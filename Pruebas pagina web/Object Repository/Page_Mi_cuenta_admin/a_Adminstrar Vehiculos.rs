@@ -3,7 +3,7 @@
    <description></description>
    <name>a_Adminstrar Vehiculos</name>
    <tag></tag>
-   <elementGuidId>193eec16-6ec2-4541-92f0-84fc9235f2c5</elementGuidId>
+   <elementGuidId>025c8be9-e8ee-4fa6-af90-64e2250420e5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>dbe85ad3-13a1-4bf9-b774-6fd1c5a3c3c0</webElementGuid>
+      <webElementGuid>ddc97241-da6d-4fbe-a9b5-ad2406ed2cce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-outline-dark mt-auto</value>
-      <webElementGuid>f31848c4-af4a-4d71-9b5a-e7fa7e93780d</webElementGuid>
+      <webElementGuid>34682f62-37f3-4101-afd2-ea5b4c28dbd6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/tienda_trabajador/</value>
-      <webElementGuid>3dd9ab53-127f-440b-9e86-1765978ffff3</webElementGuid>
+      <webElementGuid>cad21863-3c02-412c-a247-1c8094f4d275</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Adminstrar Vehiculos</value>
-      <webElementGuid>8e235871-29a9-4d95-b986-2c13d58b70b5</webElementGuid>
+      <webElementGuid>581e2fd2-6f64-4174-8c0a-f77ee331dca0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/main[1]/section[@class=&quot;py-5&quot;]/div[@class=&quot;container px-4 px-lg-5&quot;]/div[@class=&quot;row gx-4 gx-lg-5 row-cols-2 row-cols-md-2 row-cols-xl-4 justify-content-center&quot;]/div[@class=&quot;col mb-5&quot;]/div[@class=&quot;card h-100&quot;]/div[@class=&quot;card-footer p-2 pt-0 border-top-0 bg-transparent&quot;]/div[@class=&quot;text-center&quot;]/a[@class=&quot;btn btn-outline-dark mt-auto&quot;]</value>
-      <webElementGuid>f4293c87-8609-4704-9766-cf6972f5652d</webElementGuid>
+      <webElementGuid>194dddb8-f778-4677-99b8-8e9e87baa5bc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Adminstrar Vehiculos')]</value>
-      <webElementGuid>3ee95299-6668-4789-b96b-4a6c2be64c15</webElementGuid>
+      <webElementGuid>f11c8b3e-421f-4d61-9677-beec733fc56f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Vehiculos'])[1]/following::a[1]</value>
-      <webElementGuid>4e155238-79b8-4bcc-ab1e-0e112cbaf7fa</webElementGuid>
+      <webElementGuid>1498b5a5-2a83-412e-8934-e60e68c4bc2f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Adminstrar Compras'])[1]/following::a[1]</value>
-      <webElementGuid>59ecc5fc-2596-4cae-aaf5-4616cf462951</webElementGuid>
+      <webElementGuid>843fa1cd-b1c7-4d7f-944b-1f13f55a5781</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Usuarios'])[2]/preceding::a[1]</value>
-      <webElementGuid>5f0173c7-6eea-4e00-a3ff-f1dd1ddd7057</webElementGuid>
+      <webElementGuid>9a230a6c-cc96-4f07-bb35-b8785e03bcde</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Adminstrar Usuarios'])[1]/preceding::a[1]</value>
-      <webElementGuid>ea3ab9ae-775d-420e-b272-f1323009cf4d</webElementGuid>
+      <webElementGuid>dfae7686-fc69-446e-af92-5a305af9e569</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Adminstrar Vehiculos']/parent::*</value>
-      <webElementGuid>72a143a7-b109-47cd-8fd7-a62d3a2e3aa0</webElementGuid>
+      <webElementGuid>19d675e4-8fc6-408f-a56c-d88b65f4a9ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>(//a[contains(@href, '/tienda_trabajador/')])[2]</value>
-      <webElementGuid>dcc00e00-f807-4750-9cde-0d5c3aab3bcb</webElementGuid>
+      <webElementGuid>26ec79c3-6e13-4986-9831-4a914190e371</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/div[2]/div/a</value>
-      <webElementGuid>d0e41aa8-5c65-409b-a49f-ae14ea41afd5</webElementGuid>
+      <webElementGuid>1b16c86b-d0c7-4cbb-808d-cd323e8a8497</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +133,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '/tienda_trabajador/' and (text() = 'Adminstrar Vehiculos' or . = 'Adminstrar Vehiculos')]</value>
-      <webElementGuid>08aefb6e-c11d-4677-baa5-88d6418ad332</webElementGuid>
+      <webElementGuid>76dfe3fa-1cfd-4abd-9e49-011bcc82f880</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -3,23 +3,18 @@
    <description></description>
    <name>input__descripcin</name>
    <tag></tag>
-   <elementGuidId>65f823d5-46a4-42f0-ab2f-0b87cd0407c3</elementGuidId>
-   <imagePath>../mi_web/static/vet/img/Electaurus.png</imagePath>
+   <elementGuidId>a3570158-30c4-4e09-8be5-ac2634674424</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#id_descripción</value>
+         <value>#descripción_id</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='id_descripción']</value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value>../mi_web/static/vet/img/Electaurus.png</value>
+         <value>//input[@id='descripción_id']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>IMAGE</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -34,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>69fd7e10-90a3-4db4-a6bc-61c8742a17c3</webElementGuid>
+      <webElementGuid>6ea18924-b9b5-4098-ba7d-ed5c57264215</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>7dbffc92-06bc-4c77-8fd8-4cac4481fbea</webElementGuid>
+      <webElementGuid>9da24952-01e5-4e96-bc69-6de4cd5c1b42</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +45,15 @@
       <name>name</name>
       <type>Main</type>
       <value>descripción</value>
-      <webElementGuid>2ff84735-a7e9-4b21-99de-494ec6703953</webElementGuid>
+      <webElementGuid>59b5f5d9-33ac-4caf-bd43-1ec7dbe44043</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>auto en estado indescriptible Detalle: no anda</value>
+      <webElementGuid>1e42a36b-0836-4ccd-8d7f-f97cc0c07277</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,7 +61,15 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>150</value>
-      <webElementGuid>75039f74-1485-4501-ac90-03c2e43c0579</webElementGuid>
+      <webElementGuid>81f5ab3f-788f-4eb8-9614-3084bbc8dec7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>descripción_id</value>
+      <webElementGuid>8eaf7a8f-0e72-4f66-9902-9f969622c244</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,31 +77,23 @@
       <name>class</name>
       <type>Main</type>
       <value>textinput form-control</value>
-      <webElementGuid>74e4d188-41e7-4468-8fdd-d41026f4b305</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>id_descripción</value>
-      <webElementGuid>fb302cce-385b-4558-b3b8-5eae4800fe75</webElementGuid>
+      <webElementGuid>e27f99f5-9609-4f82-8ec8-d4998ce7fceb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;id_descripción&quot;)</value>
-      <webElementGuid>94039e09-f145-4c46-a1ea-e8c1026ecc17</webElementGuid>
+      <value>id(&quot;descripción_id&quot;)</value>
+      <webElementGuid>70950a8b-031c-471b-b505-321c912193cd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='id_descripción']</value>
-      <webElementGuid>5f233820-02f0-4860-b744-a5eff83886fd</webElementGuid>
+      <value>//input[@id='descripción_id']</value>
+      <webElementGuid>eaa3da6c-b24e-49cd-bdb4-a1a72c77209a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +101,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='div_id_descripción']/input</value>
-      <webElementGuid>5bf362c9-4dff-4aa7-8c07-abe7383b9b59</webElementGuid>
+      <webElementGuid>4bf64a9f-7e1f-4d49-a59a-c8f245cfaa72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,14 +109,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/input</value>
-      <webElementGuid>216f8764-6801-4fc1-986b-586d47d6c380</webElementGuid>
+      <webElementGuid>ade0e199-f66e-4531-8ec7-1952c2ff6351</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @name = 'descripción' and @id = 'id_descripción']</value>
-      <webElementGuid>f8e6b493-3bf1-49b2-aff6-9c5ddc13dd38</webElementGuid>
+      <value>//input[@type = 'text' and @name = 'descripción' and @id = 'descripción_id']</value>
+      <webElementGuid>d0c8cae2-66a7-49f8-8eb2-8692b8944dd0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

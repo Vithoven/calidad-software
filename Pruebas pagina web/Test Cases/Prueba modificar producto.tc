@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Prueba modificar producto</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3ea1c679-af6e-411a-913d-f4b8dcf83dab</testCaseGuid>
+</TestCaseEntity>

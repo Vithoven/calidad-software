@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input__precio</name>
+   <name>input_productoElectaurus_SYSVYox.png_btn bt_095148</name>
    <tag></tag>
-   <elementGuidId>5c1c0328-dc2f-4117-80bd-b3b7cfe5adb2</elementGuidId>
+   <elementGuidId>8ac32201-975b-4ebb-a83c-4de7d6b465d9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#precio_id</value>
+         <value>input.btn.btn-danger</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='precio_id']</value>
+         <value>//input[@value='Confirmar Eliminación']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:label=&quot;Precio*&quot;i</value>
+         <value>internal:role=button[name=&quot;Confirmar Eliminación&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,86 +29,70 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>05ee9de6-651e-4483-81d6-abcf775fd57e</webElementGuid>
+      <webElementGuid>d5de8d1b-e951-4175-b2be-23038d768340</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>number</value>
-      <webElementGuid>dfe9aeae-75b8-44a8-8936-f7b4224f3849</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>precio</value>
-      <webElementGuid>ba6e9a24-d87c-45df-9c63-0d824e6e78f0</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>value</name>
-      <type>Main</type>
-      <value>0</value>
-      <webElementGuid>e5a8b0ed-4695-436f-8da8-1bf8e27ae2e2</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>precio_id</value>
-      <webElementGuid>92a0bf87-04b8-4b24-8cf4-7ee2e0fb5899</webElementGuid>
+      <value>submit</value>
+      <webElementGuid>69697e2e-962c-4506-8b33-865ea41696e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>numberinput form-control</value>
-      <webElementGuid>94a6c2d3-0cdc-4cf5-80db-59e43380c321</webElementGuid>
+      <value>btn btn-danger</value>
+      <webElementGuid>1a4c1611-3422-4786-a0f7-c2483f49aa1e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-dismiss</name>
+      <type>Main</type>
+      <value>modal</value>
+      <webElementGuid>ad1f8641-de06-4c26-81b5-8f65b282a278</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Confirmar Eliminación</value>
+      <webElementGuid>07a4c055-0d02-41ec-aae7-96312b29a66f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;precio_id&quot;)</value>
-      <webElementGuid>2579d368-c8b1-4dd8-a03a-4c22e7572fd2</webElementGuid>
+      <value>/html[1]/body[1]/main[1]/div[@class=&quot;container px-5&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-6&quot;]/div[@class=&quot;mt-2 p-2 border rounded&quot;]/form[1]/input[@class=&quot;btn btn-danger&quot;]</value>
+      <webElementGuid>fb185f25-c033-420a-901b-16d219f3fdf1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='precio_id']</value>
-      <webElementGuid>74ee0591-c001-4238-abbe-650d06927c96</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='div_id_precio']/input</value>
-      <webElementGuid>cee23809-775d-4d7d-862a-135fe12d32ea</webElementGuid>
+      <value>//input[@value='Confirmar Eliminación']</value>
+      <webElementGuid>0f6f76ab-2986-486d-af89-807069c6b392</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[4]/input</value>
-      <webElementGuid>467304b9-11fa-4ddd-a5a8-2d3c2bf58023</webElementGuid>
+      <value>//input[2]</value>
+      <webElementGuid>2d590c37-f397-4608-b1c0-b0648b1a3aab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'number' and @name = 'precio' and @id = 'precio_id']</value>
-      <webElementGuid>7fcc225d-d536-4910-9697-2b43b755cc66</webElementGuid>
+      <value>//input[@type = 'submit']</value>
+      <webElementGuid>515ce703-1160-4ff6-a882-e1e65d769eff</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

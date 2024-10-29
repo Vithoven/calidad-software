@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input__username</name>
+   <name>input__precio</name>
    <tag></tag>
-   <elementGuidId>2388bc35-75d4-4496-92fe-2490aef5c1c0</elementGuidId>
+   <elementGuidId>5a80cb15-c764-41ad-9947-43f6ba47db1d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#id_username</value>
+         <value>#precio_id</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='id_username']</value>
+         <value>//input[@id='precio_id']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:label=&quot;Correo*&quot;i</value>
+         <value>internal:label=&quot;Precio*&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,102 +29,86 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>c90ac93a-ef58-4485-a378-048c3c58bd8d</webElementGuid>
+      <webElementGuid>e650f3a6-9efb-403c-a0c3-657bf35eb14f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>text</value>
-      <webElementGuid>b908cd53-75a5-4b94-847c-b87cf6630475</webElementGuid>
+      <value>number</value>
+      <webElementGuid>9961697e-ea84-467e-bed7-b6d66ff1f9e2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>username</value>
-      <webElementGuid>6bccbfd9-2528-4641-840c-7a178bc8ca53</webElementGuid>
+      <value>precio</value>
+      <webElementGuid>c0dd693c-3145-43ff-a65e-a6f4f809eb1d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>autocapitalize</name>
+      <name>value</name>
       <type>Main</type>
-      <value>none</value>
-      <webElementGuid>51688893-d80b-429d-a982-908600711d1b</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>autocomplete</name>
-      <type>Main</type>
-      <value>username</value>
-      <webElementGuid>46ef7f7a-b00b-436d-90d7-13702b1a2352</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>maxlength</name>
-      <type>Main</type>
-      <value>150</value>
-      <webElementGuid>c4b46c82-8f68-4862-8769-8ec48c5679ac</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>textinput form-control</value>
-      <webElementGuid>728eee72-a708-43e9-8a56-a6e6e073b2f6</webElementGuid>
+      <value>5000</value>
+      <webElementGuid>fb38064b-1f07-47a2-8bf9-6ed65b59c868</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>id_username</value>
-      <webElementGuid>628150cf-6ca0-42af-81e5-9690828f5d13</webElementGuid>
+      <value>precio_id</value>
+      <webElementGuid>b7a5ab11-6afd-4c4a-b038-ec84bd08af3e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>numberinput form-control</value>
+      <webElementGuid>32ff5bf4-e3df-4a0a-9002-e9c461de2362</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;id_username&quot;)</value>
-      <webElementGuid>7fb9cec0-74e4-4545-8256-4fc897a9bcf5</webElementGuid>
+      <value>id(&quot;precio_id&quot;)</value>
+      <webElementGuid>400789a3-fc04-417c-8d09-f9143e2694aa</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='id_username']</value>
-      <webElementGuid>b69d3e05-8486-47c0-8daa-56670bf382f5</webElementGuid>
+      <value>//input[@id='precio_id']</value>
+      <webElementGuid>e6ed4656-b9f8-4e70-8708-3d5aba57b7ec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='div_id_username']/input</value>
-      <webElementGuid>b2785238-42e5-4faa-90bc-b3fddcd46b1b</webElementGuid>
+      <value>//div[@id='div_id_precio']/input</value>
+      <webElementGuid>b7eca699-3840-45b5-b252-f29946cd7370</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/input</value>
-      <webElementGuid>2e7fa813-afa8-4727-bcbb-55c36df252b6</webElementGuid>
+      <value>//div[4]/input</value>
+      <webElementGuid>6a73468d-fcdb-45aa-95ce-efb8dfe6b380</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @name = 'username' and @id = 'id_username']</value>
-      <webElementGuid>d7ec3d0d-28ad-4923-9210-d4c18f24b3ef</webElementGuid>
+      <value>//input[@type = 'number' and @name = 'precio' and @id = 'precio_id']</value>
+      <webElementGuid>1f3942ea-f0da-4f3a-8bd3-5f53e087aa68</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
